@@ -12,7 +12,7 @@ spec:
       revision: HEAD
       directories:
       - path: argo-app/apps/*/envs/prod-us
-      - path: argo-app/apps/*/envs/prod-eu      
+      - path: argo-app/apps/*/envs/prod-eu 
   template:      
     metadata:
       name: '{{index .path.segments 1}}-{{index .path.segments 3}}' 
