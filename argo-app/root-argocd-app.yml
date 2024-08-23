@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
-    targetRevision: HEAD
-    path: appsets
+    repoURL: https://github.com/tanghuutoan-vn/helm-promotion-sample-app.git
+    targetRevision: main
+    path: argo-app/appsets
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
