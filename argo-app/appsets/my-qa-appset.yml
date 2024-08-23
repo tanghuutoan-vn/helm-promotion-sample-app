@@ -9,7 +9,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/tanghuutoan-vn/helm-promotion-sample-app.git
-      revision: HEAD
+      revision: main
       directories:
       - path: argo-app/apps/*/envs/qa  
   template:      
@@ -22,7 +22,7 @@ spec:
       # Source of the application manifests
       source:
         repoURL: https://github.com/tanghuutoan-vn/helm-promotion-sample-app.git
-        targetRevision: HEAD
+        targetRevision: main
         path: '{{.path.path}}'
       
       # Destination cluster and namespace to deploy the application
