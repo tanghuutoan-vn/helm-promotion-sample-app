@@ -11,7 +11,7 @@ spec:
       repoURL: https://github.com/tanghuutoan-vn/helm-promotion-sample-app.git
       revision: HEAD
       directories:
-      - path: apps/*/envs/qa   
+      - path: argo-app/apps/*/envs/qa   
   template:      
     metadata:
       name: '{{index .path.segments 1}}-{{index .path.segments 3}}'     
